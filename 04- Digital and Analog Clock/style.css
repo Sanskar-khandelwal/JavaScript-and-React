@@ -8,10 +8,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .clock{
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     width: 90%;
     max-width: 450px;
     height: 700px;
@@ -25,8 +26,8 @@ body{
     /* background-color: rgb(36, 36, 36); */
     border-radius: 50%;
     border: 2px solid rgb(16, 16, 16);
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     position: relative;
 }
 
@@ -49,4 +50,25 @@ body{
     border-radius: 50%;
     transform: rotate(-90deg);
     transform-origin: left;
+}
+.hr{
+    width: 30%;
+}
+.min{
+    width: 35%;
+}
+
+
+/* Digital */
+
+.digital{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.Dihr, .Dimin{
+    border-right: 2.5px solid white;
+    padding-right: 50px;
 }

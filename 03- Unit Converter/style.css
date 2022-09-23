@@ -21,7 +21,7 @@ section{
     max-width: 1100px;
     margin: 20px auto;
     padding: 50px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family:Arial, Helvetica, sans-serif;
    
     letter-spacing: .8px;
@@ -47,8 +47,9 @@ section{
 }
 .answer{
     background-color: rgb(81, 79, 79, 0.6);
-    padding: 30px 15px;
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height,padding 1400ms ease ;
 }
 
 .faq{
@@ -56,4 +57,22 @@ section{
 }
 
 
+.faq.active .answer {
+    max-height: 300px;
+    padding: 30px 10px;
+    animation: fade 1000ms ease-in-out;
+}
 
+
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}

@@ -162,7 +162,7 @@ function addingSameTask(task){
     }
     else{
         tasks = JSON.parse(localStorage.getItem('tasks'));
-    }
+    } 
 
 
 
